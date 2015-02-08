@@ -1,18 +1,56 @@
 @import url("chrome://komodo/skin/plat/shared/tabs.less");
-@import url("chrome://oceamodo/skin/_config/colors.less");
+@import url("chrome://atomikz/skin/_config/colors.less");
 
 #editorviewbox tabs
 {
-  
+  background: @color-strongest;
   margin-bottom: 2px;
     tab
     {
+      position: relative;
         padding: 3px 5px;
         margin-top: 8px;
+        font-weight: 400 !important;
         .tab-icon
         {
             visibility: collapse;
         }
+    }
+    
+    tab:after {
+      content:  "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -moz-transform: perspective(40px) rotateX(15deg);
+      z-index: -1;
+      background: @color-stronger;
+    }
+    
+    tab:hover:after {
+      content:  "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -moz-transform: perspective(40px) rotateX(15deg);
+      z-index: -1;
+      background: @color-strong;
+    }
+    
+    tab[selected="true"]:after {
+      content:  "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -moz-transform: perspective(40px) rotateX(15deg);
+      z-index: -1;
+      background: @color-weak;
     }
     
     tab[first-tab="true"] {

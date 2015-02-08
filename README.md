@@ -1,14 +1,13 @@
 Description
 ===================
 
-Oceamodo skin for Komodo
+AtomikZ skin for Komodo
 
 ![Screenshot](screen.png)
 
 Building
 ========
-* Go to folder where you extract sources of this skin.
-* Open terminal in this folder (or navigate to folder from the terminal).
+* Go to a folder where you extracted the source.
 * Run:
 * For Windows: `koext.py build --unjarred`
 * For *nix (Mac OS and Linux): `koext build --unjarred`

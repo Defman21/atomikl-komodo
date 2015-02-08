@@ -1,12 +1,12 @@
 @import url("chrome://komodo/skin/plat/shared/window.less");
-@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,400italic,300italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Muli:400,300);
 
 :root
 {
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 300;
-    font-size: 9pt;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 11pt;
 
     *
     {
@@ -19,7 +19,7 @@
     treechildren#places-files-tree-body::-moz-tree-cell-text(places_folder_open),
     treechildren#places-files-tree-body::-moz-tree-cell-text(places_folder_closed)
     {
-        font-weight: 400 !important;
+        font-weight: 500 !important;
     }
 }
 
@@ -61,7 +61,7 @@ button
 {
     min-height: 13px;
     padding: 5px;
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 
 minimap
@@ -74,9 +74,9 @@ window#komodo_main :not(toolbarbutton):not(toolbaritem)
 {
     & > :-moz-any(button,toolbarbutton):not(.tab-close-button):not(.tabs-closebutton)
     {
-        padding: 2px;
-        margin: 2px;
-
+        padding: 5px;
+        margin: 4px;
+        border-radius: 0 !important;
         transition: all 0.2s ease;
 
         & > :-moz-any(button, toolbarbutton)
@@ -131,6 +131,7 @@ groupbox .groupbox-body
 :-moz-any(textbox, menulist, button[type="menu"]):not(.plain)
 {
     padding: 4px;
+    border-radius: 0 !important;
 }
 
 /* Menu's */
@@ -161,6 +162,7 @@ menuseparator
 button:-moz-any(.button-toolbar-a, .button-toolbar-b, .button-toolbar-c, .button-toolbar-d, .button-plain):not([disabled="true"]):not(.button-link):not([type="menu"]),
 :not(toolbarbutton):not(toolbaritem) > toolbarbutton:not([disabled="true"])
 {
+  border-radius: 0 !important;
     &:hover
     {
         background-color: transparent !important;
