@@ -3,10 +3,10 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
     <Description about="urn:mozilla:install-manifest">
         <em:unpack>true</em:unpack>
-        <em:id>atomikz@devbevariour.cf</em:id>
-        <em:name>AtomikZ</em:name>
+        <em:id>atomikl@devbevariour.cf</em:id>
+        <em:name>AtomikL</em:name>
         <em:version>1.0</em:version>
-        <em:description>AtomikZ Skin for Komodo 9</em:description>
+        <em:description>AtomikL Skin for Komodo 9</em:description>
         <em:creator>Sergey Kislyakov</em:creator>
         <em:type>2</em:type> <!-- type=extension --> 
 

@@ -1,7 +1,7 @@
 Description
 ===================
 
-AtomikZ skin for Komodo
+AtomikL skin for Komodo
 
 ![Screenshot](screen.png)
 

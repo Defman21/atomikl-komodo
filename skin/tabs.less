@@ -1,10 +1,11 @@
 @import url("chrome://komodo/skin/plat/shared/tabs.less");
-@import url("chrome://atomikz/skin/_config/colors.less");
+@import url("chrome://atomikl/skin/_config/colors.less");
 
 #editorviewbox tabs
 {
   background: @color-strongest;
   margin-bottom: 2px;
+  border-bottom: 1px solid @color-strongest;
     tab
     {
       position: relative;
@@ -27,6 +28,7 @@
       -moz-transform: perspective(40px) rotateX(15deg);
       z-index: -1;
       background: @color-stronger;
+      border: 1px solid @color-strongest;
     }
     
     tab:hover:after {
@@ -39,6 +41,7 @@
       -moz-transform: perspective(40px) rotateX(15deg);
       z-index: -1;
       background: @color-strong;
+      border: 1px solid @color-strongest;
     }
     
     tab[selected="true"]:after {
@@ -51,6 +54,7 @@
       -moz-transform: perspective(40px) rotateX(15deg);
       z-index: -1;
       background: @color-weak;
+      border: 1px solid @color-strongest;
     }
     
     tab[first-tab="true"] {
